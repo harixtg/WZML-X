@@ -281,7 +281,6 @@ def get_readable_message():
         ]:
             up_speed += speed_in_bytes_per_second
 
-    msg += BotTheme('HK')
     msg += BotTheme('FOOTER')
     buttons = ButtonMaker()
     buttons.ibutton(BotTheme('REFRESH', Page=f"{PAGE_NO}/{PAGES}"), "status ref")
@@ -301,6 +300,7 @@ def get_readable_message():
     msg += BotTheme('uptime', uptime=get_readable_time(time() - botStartTime))
     msg += BotTheme('DL', DL=get_readable_file_size(dl_speed))
     msg += BotTheme('UL', UL=get_readable_file_size(up_speed))
+    msg += BotTheme('HK')
     return msg, button
 
 
