@@ -5,7 +5,7 @@ from aiofiles.os import remove as aioremove
 from random import choice as rchoice
 from time import time
 from re import match as re_match
-from cryptography.fernet import InvalidToken
+#from cryptography.fernet import InvalidToken
 
 from pyrogram import Client
 from pyrogram.enums import ParseMode
@@ -226,7 +226,7 @@ async def delete_all_messages():
                 LOGGER.error(str(e))
 
 
-async def get_tg_link_content(link, user_id, decrypter=None):
+"""async def get_tg_link_content(link, user_id, decrypter=None):
     message = None
     user_sess = user_data.get(user_id, {}).get('usess', '')
     if link.startswith(('https://t.me/', 'https://telegram.me/', 'https://telegram.dog/', 'https://telegram.space/')):
@@ -279,7 +279,49 @@ async def get_tg_link_content(link, user_id, decrypter=None):
     elif not private:
         return message, 'bot'
     else:
-        raise TgLinkException("Bot can't download from GROUPS without joining!, Set your Own Session to get access !")
+        raise TgLinkException("Bot can't download from GROUPS without joining!, Set your Own Session to get access !")"""
+
+
+async def get_tg_link_content(link):
+    message = None
+    if link.startswith('https://t.me/'):
+        private = False
+        msg = re_match(r"https:\/\/t\.me\/(?:c\/)?([^\/]+)(?:\/[^\/]+)?\/([0-9]+)", link)
+    else:
+        private = True
+        msg = re_match(r"tg:\/\/openmessage\?user_id=([0-9]+)&message_id=([0-9]+)", link)
+        if not user:
+            raise TgLinkException('USER_SESSION_STRING required for this private link!')
+
+    chat = msg.group(1)
+    msg_id = int(msg.group(2))
+    if chat.isdigit():
+        chat = int(chat) if private else int(f'-100{chat}')
+
+    if not private:
+        try:
+            message = await bot.get_messages(chat_id=chat, message_ids=msg_id)
+            if message.empty:
+                private = True
+        except Exception as e:
+            private = True
+            if not user:
+                raise e
+
+    if private and user:
+        try:
+            user_message = await user.get_messages(chat_id=chat, message_ids=msg_id)
+        except Exception as e:
+            raise TgLinkException(
+                f"You don't have access to this chat!. ERROR: {e}") from e
+        if not user_message.empty:
+            return user_message, 'user'
+        else:
+            raise TgLinkException("Private: Please report!")
+    elif not private:
+        return message, 'bot'
+    else:
+        raise TgLinkException("Bot can't download from GROUPS without joining!")
 
 
 async def update_all_messages(force=False):
