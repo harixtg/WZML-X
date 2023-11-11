@@ -136,38 +136,39 @@ class WZMLStyle:
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b><i>{Name}</i></b>\n┃\n'
-    SIZE =                  '┠ <b>Size: </b>{Size}\n'
-    ELAPSE =                '┠ <b>Elapsed: </b>{Time}\n'
-    MODE =                  '┠ <b>Mode: </b>{Mode}\n'
+    NAME =                  '<b>✓ ɴᴀᴍᴇ : <code>{Name}</code></b>\n\n'
+    SIZE =                  '<b>┌  sɪᴢᴇ : </b><code>{Size}</code>\n'
+    ELAPSE =                '<b>├  ᴇʟᴀᴘsᴇᴅ : </b><code>{Time}</code>\n'
+    MODE =                  '<b>├  ᴍᴏᴅᴇ : </b><code>{Mode}</code>\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '┠ <b>Total Files: </b>{Files}\n'
-    L_CORRUPTED_FILES =     '┠ <b>Corrupted Files: </b>{Corrupt}\n'
-    L_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
-    L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
-    
+    L_TOTAL_FILES =         '<b>├ ᴛᴏᴛᴀʟ ғɪʟᴇs : </b><code>{Files}</code>\n'
+    L_CORRUPTED_FILES =     '<b>├ ᴄᴏʀʀᴜᴘᴛᴇᴅ ғɪʟᴇs : </b><code>{Corrupt}</code>\n'
+    L_CC =                  '<b>└ ᴜᴘʟᴏᴅᴇ ʙʏ: </b>{Tag}</code>\n\n'
+    PM_BOT_MSG =            '<b>🔰 ғɪʟᴇ ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴀʙᴏᴠᴇ\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ​</a></b>'
+    L_BOT_MSG =             '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʙᴏᴛ ᴘᴍ ᴘʀɪᴠᴀᴛᴇ\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ​</a></b>'
+    L_LL_MSG =              '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ. ᴀᴄᴄᴇꜱꜱ ᴠɪᴀ ʟɪɴᴋꜱ...\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ</a></b>'
+
     # ----- MIRROR -------
-    M_TYPE =                '┠ <b>Type: </b>{Mimetype}\n'
-    M_SUBFOLD =             '┠ <b>SubFolders: </b>{Folder}\n'
-    TOTAL_FILES =           '┠ <b>Files: </b>{Files}\n'
-    RCPATH =                '┠ <b>Path: </b><code>{RCpath}</code>\n'
-    M_CC =                  '┖ <b>By: </b>{Tag}\n\n'
-    M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
+    M_TYPE =                '<b>├  ᴛʏᴘᴇ : </b><code>{Mimetype}</code>\n'
+    M_SUBFOLD =             '<b>├  sᴜʙғᴏʟᴅᴇʀs : </b><code>{Folder}</code>\n'
+    TOTAL_FILES =           '<b>├  ғɪʟᴇs : </b><code>{Files}</code>\n'
+    RCPATH =                '<b>├  ᴘᴀᴛʜ : </b><code>{RCpath}</code>\n'
+    M_CC =                  '<b>└  ᴜᴘʟᴏᴅᴇ : </b>{Tag}\n\n'
+    M_BOT_MSG =             '<b>🔰 ʟɪɴᴋ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʙᴏᴛ ᴘᴍ ᴘʀɪᴠᴀᴛᴇ</b>'
+
     # ----- BUTTONS -------
-    CLOUD_LINK =      '☁️ Cloud Link'
-    SAVE_MSG =        '📨 Save Message'
-    RCLONE_LINK =     '♻️ RClone Link'
-    DDL_LINK =        '📎 {Serv} Link'
-    SOURCE_URL =      '🔐 Source Link'
-    INDEX_LINK_F =    '🗂 Index Link'
-    INDEX_LINK_D =    '⚡ Index Link'
-    VIEW_LINK =       '🌐 View Link'
-    CHECK_PM =        '📥 View in Bot PM'
-    CHECK_LL =        '🖇 View in Links Log'
-    MEDIAINFO_LINK =  '📃 MediaInfo'
+    CLOUD_LINK =      '☁️ ᴄʟᴏᴜᴅ ʟɪɴᴋ'
+    SAVE_MSG =        '📨 sᴀᴠᴇ ᴍᴇᴇssᴀɢᴇ'
+    RCLONE_LINK =     '♻️ ʀᴄʟᴏɴᴇ ʟɪɴᴋ'
+    DDL_LINK =        '📎 {Serv} ʟɪɴᴋ'
+    SOURCE_URL =      '🔐 sᴏᴜʀᴄᴇ ʟɪɴᴋ'
+    INDEX_LINK_F =    '🗂 ɪɴᴅᴇx ʟɪɴᴋ'
+    INDEX_LINK_D =    '⚡ ɪɴᴅᴇx ʟɪɴᴋ'
+    VIEW_LINK =       '🌐 ᴠɪᴇᴡ ʟɪɴᴋ'
+    CHECK_PM =        '❗ ᴠɪᴇᴡ ɪɴ ʙᴏᴛ ᴘᴍ ❗'
+    CHECK_LL =        '🖇 ᴠɪᴇᴡ ɪɴ ʟɪɴᴋ ʟᴏɢ'
+    MEDIAINFO_LINK =  '📃 ᴍᴇᴅɪᴀ ɪɴғᴏ'
     SCREENSHOTS =     '🖼 ScreenShots'
     # ---------------------
 
@@ -204,7 +205,7 @@ class WZMLStyle:
     USER =              '\n<b>├  ᴜsᴇʀ  : </b><code>{User}</code> | '
     ID =                                                        '<b>ɪᴅ :</b> <code>{Id}</code>'
     BTSEL =          '\n<b>├  sᴇʟᴇᴄᴛ  : </b><code>{Btsel}</code>'
-    CANCEL =         '\n<b>└  ᴄᴀɴᴄʟᴇ  : <code>{Cancel}</code>\n\n'
+    CANCEL =         '\n<b>└  ᴄᴀɴᴄʟᴇ  : </b><code>{Cancel}</code>\n\n'
 
     ####------FOOTER--------
     FOOTER =          '<b>┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
