@@ -42,19 +42,18 @@ STATUS_START = 0
 PAGES        = 1
 PAGE_NO      = 1
 
-
 class MirrorStatus:
-    STATUS_UPLOADING   = "Upload"
-    STATUS_DOWNLOADING = "Download"
-    STATUS_CLONING     = "Clone"
-    STATUS_QUEUEDL     = "QueueDL"
-    STATUS_QUEUEUP     = "QueueUp"
-    STATUS_PAUSED      = "Pause"
-    STATUS_ARCHIVING   = "Archive"
-    STATUS_EXTRACTING  = "Extract"
-    STATUS_SPLITTING   = "Split"
-    STATUS_CHECKING    = "CheckUp"
-    STATUS_SEEDING     = "Seed"
+    STATUS_UPLOADING   = "ᴜᴘʟᴏᴀᴅ"
+    STATUS_DOWNLOADING = "ᴅᴏᴡɴʟᴏᴀᴅ"
+    STATUS_CLONING     = "ᴄʟᴏɴᴇ"
+    STATUS_QUEUEDL     = "ǫᴜᴇᴜᴇᴅʟ"
+    STATUS_QUEUEUP     = "ǫᴜᴇᴜᴇᴜᴘ"
+    STATUS_PAUSED      = "ᴘᴀsᴜᴇ"
+    STATUS_ARCHIVING   = "ᴀʀᴄʜɪᴠᴇ"
+    STATUS_EXTRACTING  = "ᴇᴄᴛʀᴀᴄᴛ"
+    STATUS_SPLITTING   = "sᴘʟɪᴛ"
+    STATUS_CHECKING    = "ᴄʜᴇᴄᴋᴜᴘ"
+    STATUS_SEEDING     = "sᴇᴇᴅ"
 
 
 class setInterval:
