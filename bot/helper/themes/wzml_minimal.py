@@ -173,7 +173,7 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b>✓ ғɪʟᴇ ɴᴀᴍᴇ :</b> <code>{Name}</code>\n\n'
+    STATUS_NAME =       '<b>✓ ғɪʟᴇ ɴᴀᴍᴇ :</b> <code>{Name}</code>\n'
 
     #####---------PROGRESSIVE STATUS-------
     OMG =               '\n<b>┌────❪ ᴏᴍɢ × ᴄʟᴏᴜᴅ ❫─────༻</b>'
@@ -208,14 +208,14 @@ class WZMLStyle:
 
     ####------FOOTER--------
     FOOTER =          '<b>┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
-    TASKS =           '<b>├  ᴛᴀsᴋs :</b> {Tasks}\n'
-    BOT_TASKS =       '<b>├  ᴛᴀsᴋs :</b> {Tasks}/{Ttask} | <b>ᴀᴠʟ :</b> {Free}\n'
-    Cpu =             '<b>├  ᴄᴘᴜ :</b> {cpu}% | '
-    FREE =                                   '<b>ғʀᴇᴇ :</b> {free} [{free_p}%]\n'
-    Ram =             '<b>├  ʀᴀᴍ :</b> {ram}% | '
-    uptime =                                 '<b>ᴜᴘᴛɪᴍᴇ :</b> {uptime}\n'
-    DL =              '<b>├  ᴅʟ :</b> {DL}/s | '
-    UL =                                      '<b>ᴜʟ :</b> {UL}/s\n'
+    TASKS =           '<b>├  ᴛᴀsᴋs :</b> <code>{Tasks}</code>\n'
+    BOT_TASKS =       '<b>├  ᴛᴀsᴋs :</b> <code>{Tasks}/{Ttask}</code> | <b>ᴀᴠʟ :</b> <code>{Free}</code>\n'
+    Cpu =             '<b>├  ᴄᴘᴜ :</b> <code>{cpu}% | '
+    FREE =                                   '<b>ғʀᴇᴇ :</b> <code>{free} [{free_p}%]</code>\n'
+    Ram =             '<b>├  ʀᴀᴍ :</b> <code>{ram}%</code> | '
+    uptime =                                 '<b>ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n'
+    DL =              '<b>├  ᴅʟ :</b> <code>{DL}/s</code> | '
+    UL =                                      '<b>ᴜʟ :</b> <code>{UL}/s</code>\n'
     HK =              '<b>└──────────────────༻</b>'
 
     ###--------BUTTONS-------
