@@ -144,10 +144,10 @@ class WZMLStyle:
     # ----- LEECH -------
     L_TOTAL_FILES =         '<b>├ ᴛᴏᴛᴀʟ ғɪʟᴇs : </b><code>{Files}</code>\n'
     L_CORRUPTED_FILES =     '<b>├ ᴄᴏʀʀᴜᴘᴛᴇᴅ ғɪʟᴇs : </b><code>{Corrupt}</code>\n'
-    L_CC =                  '<b>└ ᴜᴘʟᴏᴅᴇ ʙʏ: </b>{Tag}</code>\n\n'
-    PM_BOT_MSG =            '<b>🔰 ғɪʟᴇ ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴀʙᴏᴠᴇ\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ​</a></b>'
-    L_BOT_MSG =             '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʙᴏᴛ ᴘᴍ ᴘʀɪᴠᴀᴛᴇ\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ​</a></b>'
-    L_LL_MSG =              '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ. ᴀᴄᴄᴇꜱꜱ ᴠɪᴀ ʟɪɴᴋꜱ...\n\n~ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ ›› <a href="https://t.me/Hari_OP">ʜᴀʀɪ ᠰ ᴛɢ</a></b>'
+    L_CC =                  '<b>└ ᴜᴘʟᴏᴅᴇ ʙʏ: </b><code>{Tag}</code>\n\n'
+    PM_BOT_MSG =            '<b>🔰 ғɪʟᴇ ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴀʙᴏᴠᴇ...</b>'
+    L_BOT_MSG =             '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʙᴏᴛ ᴘᴍ ᴘʀɪᴠᴀᴛᴇ...</b>'
+    L_LL_MSG =              '<b>🔰 ғɪʟᴇ (ꜱ) ʜᴀᴠᴇ ʙᴇᴇɴ sᴇɴᴛ. ᴀᴄᴄᴇꜱꜱ ᴠɪᴀ ʟɪɴᴋꜱ...</b>'
 
     # ----- MIRROR -------
     M_TYPE =                '<b>├  ᴛʏᴘᴇ : </b><code>{Mimetype}</code>\n'
