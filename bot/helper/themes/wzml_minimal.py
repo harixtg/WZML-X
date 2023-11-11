@@ -173,53 +173,55 @@ class WZMLStyle:
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b><i>{Name}</i></b>'
+    STATUS_NAME =       '<b>✓ ғɪʟᴇ ɴᴀᴍᴇ :</b> <code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
-    BAR =               '\n┃ {Bar}'
-    PROCESSED =         '\n┠ <b>Processed:</b> {Processed}'
-    STATUS =            '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>'
-    ETA =                                                ' | <b>ETA:</b> {Eta}'
-    SPEED =             '\n┠ <b>Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b>Elapsed:</b> {Elapsed}'
-    ENGINE =            '\n┠ <b>Engine:</b> {Engine}'
-    STA_MODE =          '\n┠ <b>Mode:</b> {Mode}'
-    SEEDERS =           '\n┠ <b>Seeders:</b> {Seeders} | '
-    LEECHERS =                                           '<b>Leechers:</b> {Leechers}'
+    OMG =               '\n<b>┌────❪ ᴏᴍɢ × ᴄʟᴏᴜᴅ ❫─────༻</b>'
+    BAR =               '\n<b>├  {Bar}</b>'
+    PROCESSED =         '\n<b>├  ᴘʀᴏᴄᴇssᴇᴅ :</b> <code>{Processed}</code>'
+    STATUS =            '\n<b>├  sᴛᴀᴛᴜs  :</b> <a href="{Url}">{Status}</a>'
+    ETA =                                                ' | <b>ᴇᴛᴀ :</b> <code>{Eta}</code>'
+    SPEED =             '\n<b>├  sᴘᴇᴇᴅ  :</b> <code>{Speed}</code>'
+    ELAPSED =                                     ' | <b>ᴇʟᴀᴘsᴇᴅ :</b> <code>{Elapsed}</code>'
+    ENGINE =            '\n<b>├  ᴇɴɢɪɴᴇ  :</b> <code>{Engine}</code>'
+    STA_MODE =          '\n<b>├  ᴍᴏᴅᴇ  :</b> <code>{Mode}</code>'
+    SEEDERS =           '\n<b>├  sᴇᴇᴅᴇʀs  :</b> <code>{Seeders}</code> | '
+    LEECHERS =                                           '<b>ʟᴇᴇᴄʜᴇʀs  :</b> <code>{Leechers}</code>'
 
     ####--------SEEDING----------
-    SEED_SIZE =      '\n┠ <b>Size: </b>{Size}'
-    SEED_SPEED =     '\n┠ <b>Speed: </b> {Speed} | '
-    UPLOADED =                                     '<b>Uploaded: </b> {Upload}'
-    RATIO =          '\n┠ <b>Ratio: </b> {Ratio} | '
-    TIME =                                         '<b>Time: </b> {Time}'
-    SEED_ENGINE =    '\n┠ <b>Engine:</b> {Engine}'
+    SEED_SIZE =      '\n<b>├  sɪᴢᴇ  : </b><code>{Size}</code>'
+    SEED_SPEED =     '\n<b>├  sᴘᴇᴇᴅ  : </b><code>{Speed}</code> | '
+    UPLOADED =                                     '<b>ᴜᴘʟᴏᴀᴅᴇᴅ : </b><code>{Upload}</code>'
+    RATIO =          '\n<b>├  ʀᴀᴛɪᴏ  : </b><code>{Ratio}</code> | '
+    TIME =                                         '<b>ᴛɪᴍᴇ : </b><code>{Time}</code>'
+    SEED_ENGINE =    '\n<b>├  ᴇɴɢɪɴᴇ  : </b><code>{Engine}</code>'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n┠ <b>Size: </b>{Size}'
-    NON_ENGINE =     '\n┠ <b>Engine:</b> {Engine}'
+    STATUS_SIZE =    '\n<b>├  sɪᴢᴇ  : </b><code>{Size}</code>'
+    NON_ENGINE =     '\n<b>├  ᴇɴɢɪɴᴇ  : </b><code>{Engine}</code>'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n┠ <b>User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n┠ <b>Select:</b> {Btsel}'
-    CANCEL =         '\n┖ {Cancel}\n\n'
+    USER =              '\n<b>├  ᴜsᴇʀ  : </b><code>{User}</code> | '
+    ID =                                                        '<b>ɪᴅ :</b> <code>{Id}</code>'
+    BTSEL =          '\n<b>├  sᴇʟᴇᴄᴛ  : </b><code>{Btsel}</code>'
+    CANCEL =         '\n<b>└  ᴄᴀɴᴄʟᴇ  : <code>{Cancel}</code>\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
-    TASKS =  '┠ <b>Tasks:</b> {Tasks}\n'
-    BOT_TASKS = '┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n'
-    Cpu = '┠ <b>CPU:</b> {cpu}% | '
-    FREE =                      '<b>F:</b> {free} [{free_p}%]'
-    Ram = '\n┠ <b>RAM:</b> {ram}% | '
-    uptime =                     '<b>UPTIME:</b> {uptime}'
-    DL = '\n┖ <b>DL:</b> {DL}/s | '
-    UL =                        '<b>UL:</b> {UL}/s'
+    FOOTER =          '<b>┌────❪ ʙᴏᴛ sᴛᴀᴛᴜs ❫─────༻</b>\n'
+    TASKS =           '<b>├  ᴛᴀsᴋs :</b> {Tasks}\n'
+    BOT_TASKS =       '<b>├  ᴛᴀsᴋs :</b> {Tasks}/{Ttask} | <b>ᴀᴠʟ :</b> {Free}\n'
+    Cpu =             '<b>├  ᴄᴘᴜ :</b> {cpu}% | '
+    FREE =                                   '<b>ғʀᴇᴇ :</b> {free} [{free_p}%]\n'
+    Ram =             '<b>├  ʀᴀᴍ :</b> {ram}% | '
+    uptime =                                 '<b>ᴜᴘᴛɪᴍᴇ :</b> {uptime}\n'
+    DL =              '<b>├  ᴅʟ :</b> {DL}/s | '
+    UL =                                      '<b>ᴜʟ :</b> {UL}/s\n'
+    HK =              '<b>└──────────────────༻</b>'
 
     ###--------BUTTONS-------
-    PREVIOUS = '⫷'
+    PREVIOUS = '⇇ ʙᴀᴄᴋ'
     REFRESH = 'ᴘᴀɢᴇs\n{Page}'
-    NEXT = '⫸'
+    NEXT = 'ɴᴇxᴛ ⇉'
     # ---------------------
 
     #STOP_DUPLICATE_MSG: ---> clone.py, aria2_listener.py, task_manager.py
