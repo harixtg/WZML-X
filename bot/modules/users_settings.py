@@ -12,7 +12,7 @@ from functools import partial
 from html import escape
 from io import BytesIO
 from asyncio import sleep
-#from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet
 
 from bot import OWNER_ID, LOGGER, bot, user_data, config_dict, categories_dict, DATABASE_URL, IS_PREMIUM_USER, MAX_SPLIT_SIZE
 from bot.helper.telegram_helper.message_utils import sendMessage, sendCustomMsg, editMessage, deleteMessage, sendFile, chat_info, user_info
@@ -353,10 +353,10 @@ async def set_custom(client, message, pre_event, key, direct=False):
         value = ldumps
     elif key in ['yt_opt', 'usess']:
         if key == 'usess':
-            password = generate_key()
+            password = Fernet.generate_key()
             try:
                 await deleteMessage(await (await sendCustomMsg(message.from_user.id, f"<u><b>Decryption Key:</b></u> \n┃\n┃ <code>{password.decode()}</code>\n┃\n┖ <b>Note:</b> <i>Keep this Key Securely, this is not Stored in Bot and Access Key to use your Session...</i>")).pin(both_sides=True))
-                encrypt_sess = (password).encrypt(value.encode())
+                encrypt_sess = Fernet(password).encrypt(value.encode())
                 value = encrypt_sess.decode()
             except Exception:
                 value = ""
