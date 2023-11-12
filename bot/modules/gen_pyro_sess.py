@@ -3,7 +3,7 @@ from time import time
 from aiofiles.os import remove as aioremove
 from asyncio import sleep, wrap_future, Lock
 from functools import partial
-#from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet
 
 from pyrogram import Client
 from pyrogram.types import ForceReply
@@ -209,7 +209,7 @@ async def get_decrypt_key(client, message):
         if grp_prompt:
             await deleteMessage(grp_prompt)
     del bot_cache[msg_id]
-    return (key), is_cancelled
+    return Fernet(key), is_cancelled
 
 
 bot.add_handler(MessageHandler(genPyroString, filters=command('exportsession') & private & CustomFilters.sudo))
