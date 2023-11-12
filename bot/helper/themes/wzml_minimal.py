@@ -40,22 +40,23 @@ class WZMLStyle:
     HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''⌬ <b><i>BOT STATISTICS :</i></b>
-┖ <b>Bot Uptime :</b> {bot_uptime}
+    BOT_STATS = '''<b>𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗜𝗦𝗧𝗜𝗖𝗦</b>
 
-┎ <b><i>RAM ( MEMORY ) :</i></b>
-┃ {ram_bar} {ram}%
-┖ <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
+<b>ʙᴏᴛ ᴜᴘᴛɪᴍᴇ :</b> {bot_uptime}
 
-┎ <b><i>SWAP MEMORY :</i></b>
-┃ {swap_bar} {swap}%
-┖ <b>U :</b> {swap_u} | <b>F :</b> {swap_f} | <b>T :</b> {swap_t}
+<b>ʀᴀᴍ - ᴍᴇᴍᴏʀʏ :</b>
+{ram_bar} {ram}%
+<b>ᴜ :</b> {ram_u} | <b>ғ :</b> {ram_f} | <b>ᴛ :</b> {ram_t}
 
-┎ <b><i>DISK :</i></b>
-┃ {disk_bar} {disk}%
-┃ <b>Total Disk Read :</b> {disk_read}
-┃ <b>Total Disk Write :</b> {disk_write}
-┖ <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
+<b>sᴡᴀᴘ - ᴍᴇᴍᴏʀʏ :</b>
+{swap_bar} {swap}%
+<b>ᴜ :</b> {swap_u} | <b>ғ :</b> {swap_f} | <b>ᴛ :</b> {swap_t}
+
+<b>ᴅɪsᴋ :</b>
+{disk_bar} {disk}%
+<b>ᴛᴏᴛᴀʟ ᴅɪsᴋ ʀᴇᴀᴅ :</b> {disk_read}
+<b>ᴛᴏᴛᴀʟ ᴅɪsᴋ ᴡʀɪᴛᴇ :</b> {disk_write}
+<b>ᴜ :</b> {disk_u} | <b>ғ :</b> {disk_f} | <b>ᴛ :</b> {disk_t}
     
     '''
     SYS_STATS = '''⌬ <b><i>OS SYSTEM :</i></b>
