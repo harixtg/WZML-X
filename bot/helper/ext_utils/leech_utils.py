@@ -135,7 +135,7 @@ async def take_ss(video_file, duration=None, total=1, gen_ss=False):
     if duration == 0:
         duration = 3
     duration = duration - (duration * 2 / 100)
-    cmd = ["render", "-hide_banner", "-loglevel", "error", "-ss", str(duration),
+    cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-ss", str(duration),
            "-i", video_file, "-vf", "thumbnail", "-frames:v", "1", des_dir]
     tstamps = {}
     thumb_sem = Semaphore(3)
